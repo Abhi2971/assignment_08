@@ -1,0 +1,79 @@
+body{
+    position: relative;
+    background-color: whitesmoke;
+}
+.container1{
+    position: relative;
+    background-color: rgba(138, 85, 16, 0.851);
+    background-attachment: fixed;
+    height: 130mm;
+    width: 100mm;
+    margin: 40mm;
+    border: 2px solid whitesmoke;
+    box-sizing: border-box;
+    padding: 0px;
+    overflow: hidden;
+    border-radius: 5mm;
+}
+.rect1{
+    position: absolute;
+    height: 33mm;
+    width: 10mm;
+    background-color: whitesmoke;
+    border: 3mm white;
+    top: 48mm;
+    left: 92mm;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius:4mm 1mm 1mm 4mm;
+}
+.container2{
+    position: absolute;
+    background-attachment: fixed;
+    height: 130mm;
+    width: 100mm;
+    top: 12mm;
+    margin-left: 20mm;
+    border: 2px solid black;
+    border-radius: 5mm;
+    box-sizing: border-box;
+    padding: 0px;
+    overflow: hidden;
+    transition: background-color 0.5s ease; /* Smooth transition for background color */
+    animation: colorChangeAnimation 0.5s infinite alternate; /* Animation for color change */
+    box-shadow: 9px -10px 0px 5px rgb(0 0 0 / 51%);
+}
+
+
+.c1{
+    position: absolute;
+    height: 130mm;
+    width: 100mm;
+    top: -56mm;
+}
+.c2{
+    position: absolute;
+    height: 130mm;
+    width: 100mm;
+    bottom: -56mm;
+}
+.p1{
+    position: relative;
+    color: black;
+    left: 32mm;
+    top: -3mm;
+}
+.p2{
+    margin: 5mm;
+    font-family: cursive;
+    font-size: small;
+}
+
+@keyframes colorChangeAnimation {
+    from {
+        background-color: #86dbe1; /* Initial color */
+    }
+    to {
+        background-color: #db99cf; /* Final color */
+    }
+}
